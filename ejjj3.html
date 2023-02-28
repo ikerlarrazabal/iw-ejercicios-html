@@ -9,17 +9,42 @@
 </head>
 
 <body>
-    <legend>-Datos del Usuario-</legend>
-    <label for="nombre">Nombre </label>
-    <input type="text" name="nombre" id="nombre">
-    <br> <br>
-    ¿Eres Socio?
-    <br> <br>
-    <label for="socio"> Soy Socio </label>
-    <input type="radio" name="socio" value="Si" >
-    <input type="radio" name="socio" value="No">
-    <label for="socio"> No soy Socio </label>
-    ><input type="email" name="email usuario" id="">
+    <fieldset>
+        <legend>-Datos del Usuario-</legend>
+        <label for="nombre">Nombre </label>
+        <input type="text" name="nombre" id="nombre">
+        <br> <br>
+        ¿Eres Socio?
+        <br> <br>
+        <label for="socio"> Soy Socio </label>
+        <input type="radio" name="socio" value="Si">
+        <input type="radio" name="socio" value="No">
+        <label for="socio"> No soy Socio </label>
+        <br> <br>
+        Email <input type="email" name="email usuario" id="idemail">
+        <br> <br>
+        Contraseña <input type="password" name="contraseña usuario" id="idcontraseña">
+    </fieldset>
+
+    <fieldset>
+        <legend>-Datos de la Reserva-</legend>
+        <label for="EDAD">Edad</label>
+        <select id="EDAD" name="EDAD">
+            <optgroup label="Selecciona">
+                <option>Menor de 18</option>
+                <option>Mayor de 18</option>
+                <br><br>
+            </optgroup>
+        </select><br>
+        Selecciona la fecha de la hora y la reserva: <br>
+        <input type="datetime-local"><br>
+        Comentarios<input type="text"><br>
+    </fieldset>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Acepto las condiciones</label>
+    <br><br>
+    <input type="submit" value="Enviar">
+
 
 </body>
 
